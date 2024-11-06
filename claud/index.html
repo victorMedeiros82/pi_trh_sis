@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Mechanics Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container-center my-5">
+        <h1 class="text-center mb-4">Automotive Mechanics Quiz</h1>
+
+        <div id="quiz-container" class="rounded shadow p-4">
+            <span id="time-remaining">60 seconds</span>
+            <div id="question-container" class="mb-4">
+                <h3 id="question-text" class="text-justify"></h3>
+                <div id="answer-options" class="mt-3"></div>
+            </div>
+
+            <div id="timer-container" class="d-flex justify-content-between mb-3">
+                <span id="time-remaining">60 seconds</span>
+                <div>
+                    <button id="skip-btn" class="btn btn-danger me-2">PULAR</button>
+                    <button id="help-btn" class="btn btn-warning">AJUDA</button>
+                </div>
+            </div>
+
+            <div id="help-options" class="d-none mb-3">
+
+                <h3>ESCOLHA UMA ALTERNATIVA PARA AJUDA.</h3>
+                <p>Você optou em escolher uma ajuda, ela vai te custar 3 pontos de sua pontuação. Boa sorte!</p>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-azul me-2 help-option"></button>
+                    <button class="btn btn-verde me-2 help-option"></button>
+                    <button class="btn btn-vermelho me-2 help-option"></button>
+                    <button class="btn btn-amarelo me-2 help-option"></button>
+                </div>
+            </div>
+            <div id="help-used" class="d-none mb-3">
+                <h3>Você já usou a ajuda para esta pergunta!</h3>
+            </div>
+
+            <div id="score-container" class="text-end mb-3">
+                <span>Pontuação: </span><span id="score">0</span>
+            </div>
+
+            <div id="result-container" class="d-none">
+                <h3 class="text-center">QUIZ COMPLETO</h3>
+                <form id="feedback-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Telefone:</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="file-upload" class="form-label">Anexar Arquivo:</label>
+                        <input type="file" class="form-control" id="file-upload">
+                    </div>
+                    <div class="mb-3">
+                        <label for="rating" class="form-label">Rate the quiz:</label>
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-star-fill rating-star"></i>
+                            <i class="bi bi-star-fill rating-star"></i>
+                            <i class="bi bi-star-fill rating-star"></i>
+                            <i class="bi bi-star-fill rating-star"></i>
+                            <i class="bi bi-star-fill rating-star"></i>
+                        </div>
+                        <input type="range" class="form-range" id="rating" min="1" max="5" step="1" value="3">
+                    </div>
+                    <div class="mb-3">
+                        <label for="feedback" class="form-label">Feedback:</label>
+                        <textarea class="form-control" id="feedback" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
