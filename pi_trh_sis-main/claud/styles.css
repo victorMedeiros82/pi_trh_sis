@@ -1,0 +1,145 @@
+/* quiz-styles.css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/img/bg-cars.jpg);
+    background-position: top center;
+    background-size: contain;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#quiz-container {
+    background-color: #fff;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /*padding: 40px;*/
+    text-align: center;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#time-remaining {
+    font-size: 18px;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+#skip-btn {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+#help-btn {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #333;
+}
+
+#help-options .btn {
+    width: 75px;
+    height: 75px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+#help-options .btn-vermelho {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+
+#help-options .btn-verde {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #fff;
+}
+
+#help-options .btn-azul {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+#help-options .btn-amarelo {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #333;
+}
+
+#score-container {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+#question-number {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#result-container {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.rating-star {
+    color: #ffc107;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.rating-star.active {
+    color: #ff9800;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/*Alternativas*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 colunas */
+    gap: 10px;
+    /* Espaçamento entre os botões */
+}
+
+.btn {
+    width: 100%;
+    /* Faz os botões ocuparem toda a largura da célula */
+    padding: 10px;
+    /* Adiciona um pouco de padding */
+}

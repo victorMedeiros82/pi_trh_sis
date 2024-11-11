@@ -1,0 +1,42 @@
+* {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+main {
+    background-color: aliceblue;
+}
+
+h1 {
+    background-color: yellow;
+}
+
+
+#temporizador>p {
+    width: 7%;
+    color: aliceblue;
+    margin: 0;
+    background-color: brown;
+}
+
+#tempo {
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+#valorTempo {
+    font-size: 3rem;
+}
+
+#perguntas {
+    background-color: yellowgreen;
+}
+
+#alternativas {
+    background-color: burlywood;
+}

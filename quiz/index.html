@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Quiz para um processo seletivo para uma vaga de mecânico de uma oficina mecânica de luxo.">
+    <meta name="keywords" content="Quiz, processo seletivo, mecânico, oficina mecânica de luxo">
+    <meta name="author" content="Victor Medeiros">
+    <meta name="dev" content="Vickthor Medeiros">
+    <title>Quiz Mecanico</title>
+    <!--css bootstrap-->
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- css local -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="">
+    <main class="container mx-auto d-flex flex-column vh-100 shadow">
+        <header>
+            <h1 class="text-center">PROCESSO SELETIVO MECÂNICO</h1>
+        </header>
+        <section id="perguntas" class="d-flex p-4 flex-column gap-2">
+            <div id="temporizador" class="d-flex justify-content-center">
+                <p id="tempo" class="text-center d-flex flex-column w-auto">
+                    <span id="valorTempo">60</span><span id="unidade">SEGUNDOS</span>
+                </p>
+            </div>
+            <div id="barraTempo">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 15%"
+                        aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="30"
+                        aria-valuemin="30" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-sucess" role="progressbar" style="width: 100%" aria-valuenow="60"
+                        aria-valuemin="60" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <h2 id="textoPergunta" class="text-center">TEXTO DA PERGUNTA</h2>
+            <section id="alternativas" class="grid gap-3 justify-content-evenly">
+                <div class="p-2 g-col-6">Pergunta 1</div>
+                <div class="p-2 g-col-6">Pergunta 2</div>
+                <div class="p-2 g-col-6">Pergunta 3</div>
+                <div class="p-2 g-col-6">Pergunta 4</div>
+            </section>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
